@@ -3,6 +3,7 @@ import { Text, View } from "react-native";
 
 import { styles } from "./styles";
 import { StatusBar } from "expo-status-bar";
+import CardView from "../../components/CardView";
 
 const GarageScreen = () => {
   return (
@@ -12,6 +13,7 @@ const GarageScreen = () => {
         <View style={[styles.triangleCorner, styles.topRight]}></View>
         <View style={[styles.triangleCorner, styles.bottomLeft]}></View>
         <View style={[styles.triangleCorner, styles.bottomRight]}></View>
+        <CardView />
       </View>
       <StatusBar style="light" />
     </View>
