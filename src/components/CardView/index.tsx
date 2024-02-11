@@ -46,12 +46,14 @@ const CardView = () => {
     <View style={styles.priceLabelContainer}>
       <Button
         title="<"
+        disabled={carData?.id === 1}
         color={"#01A6B3"}
         onPress={() => handlePreviousItem([carData, setCarData])}
       />
       <Text style={styles.priceLabel}>{carData?.price}</Text>
       <Button
         title=">"
+        disabled={carData?.id === 10}
         color={"#01A6B3"}
         onPress={() => handleNextItem([carData, setCarData])}
       />
@@ -65,7 +67,7 @@ const CardView = () => {
       {renderCarDetails()}
       {renderCarImage()}
       <Divider />
-      <BuyButton />
+      <BuyButton carName={carData?.carName} />
       {renderPriceControls()}
     </View>
   );
