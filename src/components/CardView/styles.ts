@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
     width: "100%",
+    gap: 8,
     height: "100%",
     overflow: "hidden",
     borderRadius: 8,
@@ -31,5 +32,22 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
+  },
+  image: {
+    marginBottom: 16,
+    marginTop: 16,
+    width: "100%",
+    height: "16%",
+  },
+  priceLabelContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingBottom: 10,
+    marginTop: 10,
+  },
+  priceLabel: {
+    color: "#fff",
+    fontSize: 22,
   },
 });
